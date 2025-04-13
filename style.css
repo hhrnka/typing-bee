@@ -13,9 +13,16 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    width: 10vw;
+    max-width: 120px;
+    min-width: 60px;
     height: auto;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 body {
