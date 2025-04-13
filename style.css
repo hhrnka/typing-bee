@@ -5,6 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
 body {
 display: flex;
 flex-direction: column;
