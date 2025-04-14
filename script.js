@@ -20,7 +20,10 @@ function startTest() {
     correctTyped = 0;
     isRunning = false;
     timerDisplay.textContent = timeLeft;
-    wpmDisplay.textContent = "100%";
+    wpmDisplay.textContent = "0";
+    accuracyDisplay.textContent = "100%";
+
+    loadParagraph();
     typingArea.value = "";
     typingArea.disabled = false;
     typingArea.focus ();
@@ -59,8 +62,9 @@ const paragraphs = {
 function loadParagraph() {
     const difficulty = document.getElementById("difficulty").value;
     const selectedSet = paragraphs[difficulty];
-    const randomIndex = Math.floor(Math.randomq() * selectedSet.lenght);
+    const randomIndex = Math.floor(Math.random() * selectedSet.length);
     const paragraph = selectedSet[randomIndex];
+    document.getElementById("display-paragraph").textContent = paragraph;
     document.getElementById("typing-area").value = "";
     document.getElementById("typing-area").placeholder = paragraph;
     currentParagraph = paragraph;
@@ -72,7 +76,7 @@ function calculateStats() {
     totalTyped = userInput.length;
 
     correctTyped = 0;
-    for (let i = 0; i < userInput.lenght; i++) {
+    for (let i = 0; i < userInput.length; i++) {
         if (userInput[i] === paragraph[i]) {
             correctTyped++;
         }
@@ -80,7 +84,7 @@ function calculateStats() {
 
     const words = correctTyped / 5;
     const timeElapsed = 60 - timeLeft;
-    const wpm = timeElapsed > 0 ? Math.round((words / timeElapsed.Elapsed) * 60) : 0;
+    const wpm = timeElapsed > 0 ? Math.round((words / timeElapsed) * 60) : 0;
     const accuracy = totalTyped > 0 ? Math.round((correctTyped / totalTyped) * 100) :100;
     
     wpmDisplay.textContent = wpm;
