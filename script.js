@@ -64,7 +64,7 @@ function loadParagraph() {
     const paragraph = selectedSet[randomIndex];
     document.getElementById("display-paragraph").textContent = paragraph;
     document.getElementById("typing-area").value = "";
-    document.getElementById("typing-area").placeholder = paragraph;
+    document.getElementById("typing-area").placeholder = "Start typing here...";
     currentParagraph = paragraph;
 }
 
