@@ -33,7 +33,7 @@ align-items: center;
 min-height: 100vh;
 padding: 20px;
 text-align: center;
-background-color: blanchedalmond;
+background-color: white;
 }
 
 
@@ -106,7 +106,16 @@ p {
 }
 
 .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
     font-size: 1rem;
     color: #333;
+}
+
+.stats p {
+    margin: 0 15px;
 }

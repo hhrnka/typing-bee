@@ -4,8 +4,6 @@ const wpmDisplay = document.getElementById("wpm");
 const accuracyDisplay = document.getElementById("accuracy");
 
 
-const paragraph = "Typing fast helps you work more efficiently. Practice every day!";
-
 let timer;
 let timeLeft = 60;
 let totalTyped = 0;
@@ -77,7 +75,7 @@ function calculateStats() {
 
     correctTyped = 0;
     for (let i = 0; i < userInput.length; i++) {
-        if (userInput[i] === paragraph[i]) {
+        if (userInput[i] === currentParagraph[i]) {
             correctTyped++;
         }
     }
