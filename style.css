@@ -31,7 +31,21 @@ body {
     min-height: 100vh;
     padding: 0;
     text-align: center;
+    background-color: #fefae0;
+    padding-bottom: 80px;
+}
+
+.container {
     background-color: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    max-width: 900px;
+    width: 90%;
+    margin: 60px auto 100px;
+    box-shadow: 0 4px 15px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -47,7 +61,7 @@ label, select {
 }
 
 select {
-    width: 60%;
+    width: 25%;
     margin-left: 10px;
     padding: 5px 10px;
 }
@@ -70,15 +84,15 @@ p {
     max-width: 600px;
     line-height: 1.6;
     font-size: 1.1rem;
-    color: #555;
+    color: #003049;
     margin-bottom: 40px;
 }
 
 .start-button {
     padding: 15px 30px;
     font-size: 1rem;
-    background-color: rgb(241, 187, 223);
-    color: #000;
+    background-color: #f4a261;
+    color: #003049;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -86,8 +100,9 @@ p {
 }
 
 .start-button:hover {
-    background-color: aquamarine;
+    background-color: #003049;
     transform: scale(1.05);
+    color: #f4a261;
 
 }
 
@@ -158,10 +173,21 @@ p {
 .main-footer p {
     margin: 0;
     font-size: 0.9rem;
+    border: none;
 }
 
+/* Make the page responsive on obile device*/
+@media (max-width: 600px) {
+    .main-footer {
+        font-size: 0.8rem;
+        padding: 12px 10px;
+        gap: 6px;
+    }
 
-
+    .main-footer .social-links {
+        gap: 15px;
+    }
+}
 
 
 
