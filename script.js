@@ -89,6 +89,10 @@ function calculateStats() {
     accuracyDisplay.textContent = `${accuracy}%`;
 }
 
+// Changing difficulty/paragraph sepection 
+document.getElementById("difficulty").addEventListener("change", () => {
+    loadParagraph();
+});
 
 typingArea.addEventListener("input", () => {
     if (!isRunning) {
