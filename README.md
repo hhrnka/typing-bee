@@ -1,6 +1,6 @@
 # Typing Bee 🐝
 
-Typing Bee is a fun and interactive typing speed test web app
+Typing Bee is a fun and interactive typing speed test web app. 
 Users can choose a difficulty level, practice their typing, track their Words Per Minute (WPM) and accuracy, and challenge themselves to improve
 
 ## 🖥️ Project Overview
@@ -22,6 +22,7 @@ When the page loads, a random paragraph appears based on the selected difficulty
 As soon as typing starts:
  - A 60-second countdown timer begins
  - WPM and Accuracy update live based on typing performance
+
 Once the timer reaches 0:
  - The typing area is disabled
  - Final WPM and Accuracy stats are displayed
@@ -49,8 +50,8 @@ Font Awesome 6 for social media icons
 ## ⚙️ How to Run Locally
 Clone the repository:
  - git clone https://github.com/your-username/TypingBee.git
-Open the folder in your code editor
-Open index.html in your browser to start the app
+ - Open the folder in your code editor
+ - Open index.html in your browser to start the app
 
 ## 📌 Future Enhancements 
  - Leaderboard to track best scores
