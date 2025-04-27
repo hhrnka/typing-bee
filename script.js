@@ -3,7 +3,7 @@ const timerDisplay = document.getElementById("timer");
 const wpmDisplay = document.getElementById("wpm");
 const accuracyDisplay = document.getElementById("accuracy");
 
-
+// Variable to initialise game 
 let timer;
 let timeLeft = 60;
 let totalTyped = 0;
@@ -11,8 +11,10 @@ let correctTyped = 0;
 let isRunning = false;
 let currentParagraph = ""; 
 
+
+// Start or restart typing test 
 function startTest() {
-    clearInterval (timer);
+    clearInterval (timer); // Clear existing timer 
     timeLeft = 60;
     totalTyped = 0;
     correctTyped = 0;
@@ -21,12 +23,13 @@ function startTest() {
     wpmDisplay.textContent = "0";
     accuracyDisplay.textContent = "100%";
 
-    loadParagraph();
+    loadParagraph(); // Load a new paragraph 
     typingArea.value = "";
     typingArea.disabled = false;
     typingArea.focus ();
 }
 
+// Update timer every second 
 function updateTimer () {
     if (timeLeft > 0) {
         timeLeft--;
@@ -37,6 +40,7 @@ function updateTimer () {
     }
 }
 
+// Paragraphs difficulty categories 
 const paragraphs = {
     easy: [
         'It was a bright cold day in April, and the clocks were striking thirteen. Winston walked quickly, trying not to be seen. The wind was sharp, cutting through his coat as he moved past the dusty buildings. He looked up at a sign that read BIG BROTHER IS WATCHING YOU.',
@@ -57,6 +61,7 @@ const paragraphs = {
     ]
 }
 
+// Load a random paragraph based on selected difficulty 
 function loadParagraph() {
     const difficulty = document.getElementById("difficulty").value;
     const selectedSet = paragraphs[difficulty];
@@ -68,11 +73,12 @@ function loadParagraph() {
     currentParagraph = paragraph;
 }
 
-
+// Calculate and display live stats 
 function calculateStats() {
     const userInput = typingArea.value;
     totalTyped = userInput.length;
 
+    // Calculate the correct characters typed 
     correctTyped = 0;
     for (let i = 0; i < userInput.length; i++) {
         if (userInput[i] === currentParagraph[i]) {
@@ -89,11 +95,12 @@ function calculateStats() {
     accuracyDisplay.textContent = `${accuracy}%`;
 }
 
-// Changing difficulty/paragraph sepection 
+// When user changes difficulty level, load a new paragraph 
 document.getElementById("difficulty").addEventListener("change", () => {
     loadParagraph();
 });
 
+// Handle typing input 
 typingArea.addEventListener("input", () => {
     if (!isRunning) {
         timer = setInterval (updateTimer, 1000);
