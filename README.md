@@ -1,7 +1,7 @@
 # Typing Bee 🐝
 
 Typing Bee is a fun and interactive typing speed test web app. 
-Users can choose a difficulty level, practice their typing, track their Words Per Minute (WPM) and accuracy, and challenge themselves to improve
+Users can choose a difficulty level, practice their typing, track their Words Per Minute (WPM) and accuracy, and challenge themselves to improve.
 
 ## 🖥️ Project Overview
 
@@ -13,6 +13,7 @@ Live tracking of:
  - Time remaining (starting from 60 seconds)
  - Words Per Minute (WPM)
  - Typing accuracy (%)
+ 
  - Random paragraph generation based on selected difficulty
  - Restart Test functionality
  - Mobile and desktop-friendly layout
