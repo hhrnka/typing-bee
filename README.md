@@ -18,15 +18,14 @@ Live tracking of:
  - Mobile and desktop-friendly layout
 
 ## 🚀 How it works
-When the page loads, a random paragraph appears based on the selected difficulty
-Users begin typing in the provided text area
+When the page loads, a random paragraph appears based on the selected difficulty. Users begin typing in the provided text area.
 As soon as typing starts:
-A 60-second countdown timer begins
-WPM and Accuracy update live based on typing performance
+ - A 60-second countdown timer begins
+ - WPM and Accuracy update live based on typing performance
 Once the timer reaches 0:
-The typing area is disabled
-Final WPM and Accuracy stats are displayed
-Users can restart the test anytime by clicking "Restart Test"
+ - The typing area is disabled
+ - Final WPM and Accuracy stats are displayed
+ - Users can restart the test anytime by clicking "Restart Test"
 
 ## 🛠️ Technologies used
  - HTML5
@@ -39,10 +38,10 @@ Landing Page (index.html)
 Typing Test Page (game.html)
 
 ## 🧠 Key Features Explained
-Dynamic paragraph loading - random paragraphs based on difficulty
-Real-time stats - instantly see your typing speed and accuracy while you type
-Difficulty selector - easily switch difficulty anytime
-User Experience - clean UI, emoji-enhanced options, and social links are in the footer
+ - Dynamic paragraph loading - random paragraphs based on difficulty
+ - Real-time stats - instantly see your typing speed and accuracy while you type
+ - Difficulty selector - easily switch difficulty anytime
+ - User Experience - clean UI, emoji-enhanced options, and social links are in the footer
 
 ## 🌐 External Libraries Used
 Font Awesome 6 for social media icons
