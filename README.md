@@ -3,7 +3,7 @@
 Typing Bee is a fun and interactive typing speed test web app. 
 Users can choose a difficulty level, practice their typing, track their Words Per Minute (WPM) and accuracy, and challenge themselves to improve.
 
-Try it here! - (https://hhrnka.github.io/typing-bee/)
+Try it here! - https://hhrnka.github.io/typing-bee/
 
 ## 🖥️ Project Overview
 
