@@ -39,10 +39,10 @@ Once the timer reaches 0:
 ## 📸 Screenshots
 
 **Main Page**
- - [alt text](/workspaces/typing-bee/front page.png)
+ - ![alt text](https://github.com/hhrnka/typing-bee/blob/main/front%20page.png)
 
 **Typing Test Page**
- - [alt text](/workspaces/typing-bee/game page.png)
+ - ![alt text](https://github.com/hhrnka/typing-bee/blob/main/game%20page.png)
 
 ## 🧠 Key Features Explained
  - Dynamic paragraph loading - random paragraphs based on difficulty
