@@ -38,8 +38,11 @@ Once the timer reaches 0:
 
 ## 📸 Screenshots
 
-Landing Page (index.html)
-Typing Test Page (game.html)
+**Main Page**
+ - [alt text](/workspaces/typing-bee/front page.png)
+
+**Typing Test Page**
+ - [alt text](/workspaces/typing-bee/game page.png)
 
 ## 🧠 Key Features Explained
  - Dynamic paragraph loading - random paragraphs based on difficulty
